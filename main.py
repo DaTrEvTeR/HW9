@@ -18,3 +18,9 @@ import re
 
 # 2. Даний текстовий файл. Підрахувати кількість слів у ньому.
 
+try:
+    with open('Text1.txt', 'r', encoding='utf-8') as first_file:
+        words_from_first_file = re.split(r'[:;,.\-\s]+', first_file.read())
+        print(f'Кількість слів у тексті дорівнює {len(words_from_first_file)}')
+except Exception as e:
+    print(e)
