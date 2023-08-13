@@ -24,3 +24,5 @@ import re
 #         print(f'Кількість слів у тексті дорівнює {len(words_from_first_file)}')
 # except Exception as e:
 #     print(e)
+
+# ALL TASKS DONE
